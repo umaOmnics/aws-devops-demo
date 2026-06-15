@@ -41,5 +41,8 @@ steps:
 - script: |
     python -m py_compile app.py
   displayName: 'Validate Python'
-  
+
+- script: |
+    docker build -t fastapi-demo .
+  displayName: 'Build Docker Image'
 # End of Umas yml script
