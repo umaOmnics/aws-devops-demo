@@ -16,7 +16,7 @@ app = FastAPI()
 
 @app.get("/fastapi")
 def home():
-    return {"message" : "Hello Aws-Uma--devops, from FastAPI "}
+    return {"message" : "Hello Aws-Uma--devops-new-changes, from FastAPI "}
 
 
 # Student module CRUD for learning
