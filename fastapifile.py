@@ -17,7 +17,7 @@ class Student(BaseModel):
 
 # Dummy Data
 students = [
-    {"id": 1, "name": "Uma", "course": "Python-Dev"},
+    {"id": 1, "name": "Uma", "course": "Python-Developer"},
     {"id": 2, "name": "Ravi", "course": "Java-Dev"}
 ]
 
