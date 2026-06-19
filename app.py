@@ -16,7 +16,7 @@ app = FastAPI()
 
 @app.get("/fastapi")
 def home():
-    return {"message" : "Hello Uma, from FastAPI "}
+    return {"message" : "Hello Aws-Uma, from FastAPI "}
 
 
 # Student module CRUD for learning
@@ -28,7 +28,7 @@ class Student(BaseModel):
 
 # Dummy Data
 students = [
-    {"id": 1, "name": "Uma", "course": "Python"},
+    {"id": 1, "name": "Uma", "course": "Python-developer"},
     {"id": 2, "name": "Ravi", "course": "Java"}
 ]
 
