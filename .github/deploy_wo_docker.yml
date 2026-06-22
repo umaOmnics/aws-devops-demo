@@ -1,4 +1,4 @@
-name: Deploy Docker FastAPI to EC2
+name: Deploy FastAPI to EC2
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy Docker app on EC2
+      - name: Deploy on EC2
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -18,4 +18,4 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           script: |
             cd /home/ec2-user/aws-devops-demo
-            ./docker-deploy.sh
+            ./deploy.sh
